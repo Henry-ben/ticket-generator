@@ -1,0 +1,158 @@
+body{
+   background: url(image/background-desktop.png) no-repeat;
+   background-size: cover;
+}
+.container{
+    display: flexbox;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 80%;
+    color: white;
+}
+.logo{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-left: 43%;
+    margin-top: 2%;
+}
+.start{
+    display: flex;
+    width: 50%;
+    font-size: 320%;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+.spot{
+    text-align: center;
+    font-size: 150%;
+}
+.uploadContainer{
+    display: flex;
+    width: 33rem;
+    height: 9rem;
+    position: relative;
+    left: 32%;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.uploadContainer.dragover {
+    border-color: #4CAF50;
+    background-color: #f8f8f8;
+}
+.view {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+label{
+    background-color: transparent;
+    position: relative;
+    left: 32%;
+}
+.info{
+    font-size: larger;
+    font-style: italic;
+    margin-top: 20px;
+}
+input{
+    background-color: transparent;
+    color: white;
+    width: 33rem;
+    height: 2rem;
+    border-radius: 4%;
+}
+.generator{
+    display: flex;
+    cursor: pointer;
+    background-color: #f67464;
+    color: #2a0364;
+    font-size: 110%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 32%;
+    margin-top: 2%;
+    width: 36%;
+    height: 3rem;
+    border-radius: 4%;
+}
+
+@media(250px <= width <= 600px){
+    .logo{
+        margin-left: 23%;
+    }   
+
+    .start{
+        font-size: 25px;
+        width: 80%;
+        margin-left: 13%;
+    }
+
+    .spot{
+        margin-left: 13%;
+    }
+
+    .uploadContainer{
+        width: 70%;
+        position: relative;
+        left: 19%;
+    }
+
+    label{
+        position: relative;
+        left: 18%;
+    }
+    input{
+        width: 16rem;
+    }
+
+    .generator{
+        width: 73%;
+        margin-left: -14%;
+        margin-top: 5%;
+    }
+}
+
+@media(601px <= width <= 768px){
+   .logo{
+    justify-content: center;
+    align-items: center;
+   } 
+
+   .start{
+    width: 90%;
+    font-size: 300%;
+    margin-left: 10%;
+   }
+
+   .spot{
+    margin-left: 10%;
+   }
+
+   .uploadContainer{
+    width: 75%;
+    margin-left: -15%;
+   }
+
+   label{
+    left: 16%;
+   }
+
+   input{
+    width: 76%;
+   }
+
+   .generator{
+    width: 77%;
+    margin-left: -16%;
+   }
+}

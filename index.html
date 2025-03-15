@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticket-generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <img src="image/logo-full.svg" alt="" class="logo" >
+        <h1 class="start">Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p class="spot">Secure your spot at next year's biggest coding conference</p>
+
+        <div class="uploadContainer" id="dropArea">
+
+            <img id="viewImage" class="view" src="" alt="Avater" style="display: none">
+
+            <button id="uploadButton" style="background-color:transparent;border: none; cursor: pointer;" onclick="">
+              <img src="image/icon-upload.svg" alt="upload">
+              <input type="file" id="imageInput" accept="image/png, image/jpeg" style="display: none;">
+            </button>
+
+            <span id="uploadText">Drag and drop or click to Upload</span>
+        </div> 
+
+        <label>
+            <p class="info">Full name</p>
+            <input type="text" id="fullName" placeholder="enter your full name">
+            <p><img src="image\icon-info.svg" alt=""><span id ="fullNameError" style="color: red" margin-bottom = 10px;></span></p>
+        </label>
+
+        <label>
+            <p class="info">Email Address</p>
+            <input type="text" id="email" placeholder="enter your email">
+            <p><img src="image\icon-info.svg" alt=""><span id ="emailError" style="color: red" margin-bottom = 10px;></span></p>
+        </label>
+
+        <label>
+            <p class="info">Github Username</p>
+            <input type="text" id="github" placeholder="@username">
+            <p><img src="image\icon-info.svg" alt=""><span id ="githubError" style="color: red" margin-bottom = 10px;></span></p>
+        </label>
+    </div>
+
+    <button type="button" class="generator" onclick="generateTicket()">GENERATE MY TICKET</button>
+
+    <script src="index.js"> </script>
+
+</body>
+</html>
